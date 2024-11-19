@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive Profile Page">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+    <link rel="stylesheet" href="./profile.css">
+</head>
+<body>
+    <div class="profile-container">
+        <div class="profile-sidebar">
+            <div class="profile-header">
+                <img src="profile-pic.jpg" alt="Profile Picture" class="profile-pic">
+                <h2 class="profile-name">John Doe</h2>
+                <p class="profile-email">johndoe@example.com</p>
+            </div>
+            <nav class="profile-nav">
+                <ul>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#settings">Settings</a></li>
+                    <li><a href="#orders">Orders</a></li>
+                    <li><a href="#logout">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="profile-main">
+            <section class="profile-section" id="overview">
+                <h3>Overview</h3>
+                <p>Welcome to your profile page! Here you can manage your account settings, view orders, and more.</p>
+            </section>
+            <section class="profile-section" id="settings">
+                <h3>Account Settings</h3>
+                <p>Edit your personal information and settings.</p>
+            </section>
+            <section class="profile-section" id="orders">
+                <h3>Your Orders</h3>
+                <p>View your past orders and track their status.</p>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

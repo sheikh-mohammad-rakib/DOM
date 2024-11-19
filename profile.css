@@ -1,0 +1,210 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.profile-container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-sidebar {
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-header {
+    margin-bottom: 30px;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.profile-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.profile-email {
+    font-size: 1rem;
+    color: #bbb;
+}
+
+.profile-nav ul {
+    list-style: none;
+    width: 100%;
+}
+
+.profile-nav ul li {
+    margin: 15px 0;
+}
+
+.profile-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.profile-nav ul li a:hover {
+    background-color: #444;
+}
+
+.profile-main {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #fafafa;
+    border-left: 1px solid #ddd;
+}
+
+.profile-section {
+    margin-bottom: 30px;
+}
+
+.profile-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #007BFF;
+}
+
+.profile-section p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Responsive Design */
+
+/* Mobile (up to 600px) */
+@media (max-width: 600px) {
+    .profile-container {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .profile-sidebar {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .profile-pic {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 10px;
+    }
+
+    .profile-name {
+        font-size: 1.2rem;
+    }
+
+    .profile-email {
+        font-size: 0.9rem;
+    }
+
+    .profile-nav ul {
+        width: 100%;
+    }
+
+    .profile-nav ul li {
+        text-align: left;
+    }
+
+    .profile-nav ul li a {
+        padding: 8px;
+    }
+
+    .profile-main {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+/* Tablet (601px to 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .profile-container {
+        flex-direction: row;
+        margin-top: 15px;
+    }
+
+    .profile-sidebar {
+        width: 30%;
+        padding: 20px;
+    }
+
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+
+    .profile-name {
+        font-size: 1.4rem;
+    }
+
+    .profile-email {
+        font-size: 1rem;
+    }
+
+    .profile-main {
+        width: 70%;
+        padding: 20px;
+    }
+}
+
+/* Laptop/Desktop (1025px and above) */
+@media (min-width: 1025px) {
+    .profile-container {
+        flex-direction: row;
+        margin-top: 20px;
+    }
+
+    .profile-sidebar {
+        width: 250px;
+        padding: 20px;
+    }
+
+    .profile-main {
+        padding: 20px;
+    }
+
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+
+    .profile-name {
+        font-size: 1.5rem;
+    }
+}

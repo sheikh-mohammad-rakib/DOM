@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A sample semantic HTML website">
+    <title>Semantic HTML Website</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="user-options">
+                    <a href="./login.html">Login</a>
+                    <a href="./sign_up.html">Signup</a>
+                    <a href="./profile.html" class="profile">Profile</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" aria-labelledby="hero-heading">
+            <h1 id="hero-heading">Welcome to Our Website</h1>
+            <p>Your one-stop solution for all things web.</p>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">About Us</h2>
+            <p>We are a team of passionate developers and designers building quality web solutions.</p>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" aria-labelledby="services-heading">
+            <h2 id="services-heading">Our Services</h2>
+            <article>
+                <h3>Web Development</h3>
+                <p>We create responsive and dynamic websites tailored to your needs.</p>
+            </article>
+            <article>
+                <h3>UI/UX Design</h3>
+                <p>Enhance user experience with our cutting-edge design solutions.</p>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+        <nav aria-label="Footer Navigation">
+            <ul>
+                <li><a href="#privacy-policy">Privacy Policy</a></li>
+                <li><a href="#terms-of-service">Terms of Service</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

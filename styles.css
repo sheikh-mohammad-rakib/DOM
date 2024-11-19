@@ -1,0 +1,130 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+}
+
+header nav ul {
+    display: grid;
+    grid-template-columns: repeat(4, auto) 1fr;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+header nav ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav ul li a {
+    color: #fff;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #555;
+}
+
+/* User Options */
+.user-options {
+    display: flex;
+    gap: 0.5em;
+}
+
+.user-options a {
+    padding: 0.3em 0.8em;
+    border: 1px solid #007BFF;
+    border-radius: 4px;
+    font-size: 0.9em;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.user-options a:hover {
+    background-color: #007BFF;
+    color: #fff;
+    border-color: #0056b3;
+}
+
+.user-options .profile {
+    background-color: #007BFF;
+    border: none;
+    color: #fff;
+}
+
+.user-options .profile:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+
+/* Mobile (up to 600px) */
+@media (max-width: 600px) {
+    header nav ul {
+        grid-template-columns: 1fr;
+        gap: 0.5em;
+    }
+
+    .user-options {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .user-options a {
+        text-align: center;
+    }
+}
+
+/* Tablet (601px to 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    header nav ul {
+        grid-template-columns: repeat(3, auto) 1fr;
+        gap: 0.5em;
+    }
+
+    .user-options {
+        gap: 1em;
+    }
+}
+
+/* Laptop/Desktop (1025px and above) */
+@media (min-width: 1025px) {
+    header nav ul {
+        grid-template-columns: repeat(4, auto) 1fr;
+    }
+
+    .user-options {
+        justify-content: flex-end;
+    }
+}
